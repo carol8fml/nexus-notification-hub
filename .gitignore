@@ -1,0 +1,49 @@
+# ------------------------------------------------------
+# Dependencies and Logs
+# ------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ------------------------------------------------------
+# Build Output and Cache (Nx & Compilation)
+# ------------------------------------------------------
+/dist
+/tmp
+/out-tsc
+/coverage
+.nx/cache
+.nx/workspace-data
+
+# ------------------------------------------------------
+# Environment and Security
+# ------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.test
+*.pem
+*.key
+
+# ------------------------------------------------------
+# IDE and System Files
+# ------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
+*.iml
+
+# ------------------------------------------------------
+# Docker & Testing
+# ------------------------------------------------------
+docker-volumes/
+coverage/
+junit.xml
+test-results/
