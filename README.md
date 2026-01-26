@@ -39,6 +39,12 @@ graph LR
 
 ```
 
+## 🎥 Demo
+
+Video showing a test message being sent through the app and delivery confirmation in the Mailtrap dashboard:
+
+https://github.com/user-attachments/assets/5f9febbf-4db6-492e-aa2b-e81e4434f095
+
 ### Extensibility: Adding a New Channel (e.g., SMS)
 
 Because of the decoupled architecture, adding a new channel like SMS does not require refactoring existing logic. It is a strictly additive process:
