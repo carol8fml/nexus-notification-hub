@@ -105,12 +105,18 @@ npx nx serve web
 
 ## 🧪 Testing
 
-To ensure reliability, you can run the unit tests across the monorepo:
+To ensure reliability and prevent regressions, the project maintains a comprehensive suite of unit tests covering the Backend (Jest), Frontend (Vitest), and Shared Contracts.
+
+You can run all tests at once or target specific layers:
 
 ```bash
-npx nx test api
-npx nx test web
-npx nx test shared-dtos
+# Run all tests
+npm run test
+
+# Run specific layers
+npx nx test api          # Backend (Providers & Factories)
+npx nx test web          # Frontend (Components & State)
+npx nx test shared-dtos  # Contract Validation
 
 ```
 
