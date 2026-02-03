@@ -8,7 +8,7 @@
 
 A provider-agnostic notification service built to demonstrate scalable architecture patterns within a Full-stack Monorepo.
 
-## 🏗 Architecture & Design Decisions
+## Architecture & Design Decisions
 
 This project demonstrates a scalable enterprise architecture designed to decouple notification logic from external providers. The main objective is to ensure the system remains agnostic to third-party services (like Mailtrap, SendGrid, or Twilio), allowing for easy substitution without refactoring core code.
 
@@ -24,7 +24,7 @@ To ensure the system adheres to SOLID Principles (specifically the Open/Closed P
 * Factory Pattern: A `NotificationFactory` encapsulates the complexity of instantiating the correct provider based on the notification type (Email, SMS, etc.), keeping the Controller clean and focused on HTTP handling.
 * Strategy Pattern: The application allows runtime selection of the delivery strategy without modifying the consuming client code.
 
-## 📐 System Overview
+## System Overview
 
 ### Data Flow Diagram
 
@@ -39,7 +39,7 @@ graph LR
 
 ```
 
-## 🎥 Demo
+## Demo
 
 Video showing a test message being sent through the app and delivery confirmation in the Mailtrap dashboard:
 
@@ -53,7 +53,7 @@ Because of the decoupled architecture, adding a new channel like SMS does not re
 2. Update Factory: Add the new case to the `NotificationFactory`.
 3. Done: The rest of the application (Controllers, Services, Frontend) automatically supports the new capability via the interface.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * Monorepo Tooling: Nx 18
 * Backend: NestJS, Class-Validator, Nodemailer
@@ -61,7 +61,7 @@ Because of the decoupled architecture, adding a new channel like SMS does not re
 * Language: TypeScript Strict Mode
 * Containerization: Docker & Docker Compose (Ready)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -109,7 +109,7 @@ npx nx serve web
 * API: http://localhost:3000/api
 * Frontend: http://localhost:4200
 
-## 🧪 Testing
+## Testing
 
 To ensure reliability and prevent regressions, the project maintains a comprehensive suite of unit tests covering the Backend (Jest), Frontend (Vitest), and Shared Contracts.
 
@@ -126,7 +126,7 @@ npx nx test shared-dtos  # Contract Validation
 
 ```
 
-## 👤 Author
+## Author
 
 Carolina Gonçalves
 
